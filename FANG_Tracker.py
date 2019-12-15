@@ -118,6 +118,8 @@ axs[1, 1].get_yaxis().set_visible(False)
 #     axs[0, 1].plot(dataAAPLDate, dataAAPLPrice, 'tab:green')
 #     axs[1, 0].plot(dataNFLXDate, dataNFLXPrice, 'tab:red')
 #     axs[1, 1].plot(dataGOOGLDate, dataGOOGLPrice, 'tab:orange')
+
+# ani = animation.FuncAnimation(fig, animate, interval=1000)
 # # #####//DANGER###################################
 
 axs[0, 0].plot(dataFBDate, dataFBPrice, 'tab:blue' )
@@ -125,8 +127,7 @@ axs[0, 1].plot(dataAAPLDate, dataAAPLPrice, 'tab:green')
 axs[1, 0].plot(dataNFLXDate, dataNFLXPrice, 'tab:red')
 axs[1, 1].plot(dataGOOGLDate, dataGOOGLPrice, 'tab:orange')
 
-# ani = animation.FuncAnimation(fig, animate, interval=1000)
-fig.show()
+plt.show()
 
 ####INFO#####
 #https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=FB&interval=5min&apikey=demo
@@ -217,16 +218,9 @@ fig.show()
 #        return outer_arr
 ######
 
-
-
-
-
-
 ###TRASHHHHHHHH###
 
-#data = json.dumps(response.content.decode('utf-8'), indent = 4, sort_keys=True)
 
-#json_data = json.loads(response.content.decode('utf-8'))
 
 #
 #for x in data:
